@@ -1,0 +1,13 @@
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: skyblue;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  

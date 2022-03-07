@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {DettaglioClasse} from './pages/DettaglioClasse/DettaglioClasse';
+import {TypeStudente} from './types/types';
+import {TypeClass} from './types/types';
+import {Navbar} from './components/Navbar/Navbar';
+import {Footer} from './components/Footer/Footer';
+import {ClassesTable} from './components/ClassesTable/ClassesTable';
+import { useState } from 'react';
+import {student} from './api/studentsMock';
+import {classi} from './api/classesMock';
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <ClassesTable />
+      <Footer />
     </div>
   );
 }
