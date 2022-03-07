@@ -8,12 +8,25 @@ import {ClassesTable} from './components/ClassesTable/ClassesTable';
 import { useState } from 'react';
 import {student} from './api/studentsMock';
 import {classi} from './api/classesMock';
+import { callApi } from './api/callApi';
+import { useEffect } from 'react';
+
+
 
 function App() {
-
+const [data, setData] = useState<TypeStudente | undefined>(undefined);
 
   return (
     <div className="App">
+      
+      {useEffect(() => {
+        callApi().then(response => {
+          console.log(response);
+          setData(response);
+          console.log(data);
+        })
+      }, [])
+      }
       <Navbar />
       <ClassesTable />
       <Footer />
