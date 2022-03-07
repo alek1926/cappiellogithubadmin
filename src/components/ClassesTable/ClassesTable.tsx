@@ -6,7 +6,7 @@ import TableHead from '@mui/material/TableHead';
 import TableBody from '@mui/material/TableBody';
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
-import { DettaglioClasse } from '../../pages/DettaglioClasse/DettaglioClasse';
+import { DettaglioClasse } from '../DettaglioClasse/DettaglioClasse';
 import { classi } from '../../api/classesMock';
 import {TypeClass} from '../../types/types';
 

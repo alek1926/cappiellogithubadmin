@@ -1,5 +1,5 @@
 import './App.css';
-import {DettaglioClasse} from './pages/DettaglioClasse/DettaglioClasse';
+import {DettaglioClasse} from './components/DettaglioClasse/DettaglioClasse';
 import {TypeStudente} from './types/types';
 import {TypeClass} from './types/types';
 import {Navbar} from './components/Navbar/Navbar';
