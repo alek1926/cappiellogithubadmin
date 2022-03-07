@@ -3,7 +3,7 @@ footer {
     padding: 3px;
     background-color: skyblue;
     color: white;
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;

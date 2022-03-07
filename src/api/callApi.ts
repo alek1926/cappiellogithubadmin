@@ -1,10 +1,11 @@
 import axios from 'axios';
 import { TypeStudente } from '../types/types';
+import {API_DOMAIN, API_PREFIX, API_REPOS} from '../config/configApi';
 
 export const callApi = async () => {
     let result: any;
     try {
-        const { data } = await axios.get(process.env?.API_DOMAIN + process.env?.API_PREFIX + process.env?.API_REPOS);
+        const { data } = await axios.get(API_DOMAIN + API_PREFIX + API_REPOS);
         result = data;  
         return result;
     } catch (error) {
