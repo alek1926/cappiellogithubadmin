@@ -6,9 +6,9 @@ interface user {
 }
 export const userMock = {
     nickname: 'ale',
-    session: false
+    session: true
   }
 
 
-export const userContext = React.createContext<user["session"]>(false);
+export const userContext = React.createContext<boolean>(false);
 

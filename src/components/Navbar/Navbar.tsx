@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 
 const css = require('./Navbar.css')
 
-export const Navbar = () => {
+export const Navbar = (props: any) => {
 
   return (
     <>
@@ -27,7 +27,7 @@ export const Navbar = () => {
 </Grid>
 <Grid item xs={3}>
 <div>
-<NuovaClasse />
+<NuovaClasse props = {props}/>
 </div>
 </Grid>
 </Grid>

@@ -10,12 +10,15 @@ import {student} from './api/studentsMock';
 import {classi} from './api/classesMock';
 import { callApi } from './api/callApi';
 import { useEffect } from 'react';
+import TextField from '@mui/material/TextField';
+import Box from '@mui/material/Box';
 
 
 
 
 function App() {
 const [data, setData] = useState<TypeStudente | undefined>(undefined);
+const [value, setValue] = useState("");
 
   return (
     <div className="App">
@@ -28,7 +31,12 @@ const [data, setData] = useState<TypeStudente | undefined>(undefined);
         })
       }, [])
       }
-      <Navbar />
+
+      <Navbar props={value} />
+        <div>
+        <Box>{value}</Box>
+        <TextField value={value} id="standard-basic" label="Standard" variant="standard" onChange={(e) => setValue(e.target.value)}/>
+        </div>
       <ClassesTable />
       <Footer />
     </div>

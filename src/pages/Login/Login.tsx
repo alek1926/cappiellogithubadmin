@@ -39,7 +39,7 @@ export const Login = () => {
         />
         </Grid>
         <Grid item xs={12} lg={12}>
-    <Button variant="outlined" size="large" id="login">Log In</Button>
+      <Button variant="outlined" size="large" id="login">Log In</Button>
     </Grid>
     </Grid>
     </div>
